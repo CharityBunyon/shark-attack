@@ -141,6 +141,19 @@ const students = [
 
 const getStudents = () => students;
 
+const livingStudents = () => students.filter((student) => !student.isDead);
+console.log(livingStudents);
+
+const dearlyBeloved = () => students.filter((student) => student.isDead);
+
+const followTheLight = (livingStudentId) => {
+  const studentIndex = students.findIndex((student) => student.id === livingStudentId);
+  students[studentIndex].isDead = true;
+};
+
 export default {
   getStudents,
+  livingStudents,
+  dearlyBeloved,
+  followTheLight,
 };
