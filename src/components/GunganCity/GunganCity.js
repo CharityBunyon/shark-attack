@@ -8,6 +8,13 @@ import studentShape from '../../helpers/propz/studentShape';
 class GunganCity extends React.Component {
   static propTypes = {
     students: PropTypes.arrayOf(studentShape.studentShape),
+    followLight: PropTypes.func,
+  }
+
+  useForce = (e) => {
+    const { followLight } = this.props;
+    e.preventDefault();
+    followLight();
   }
 
 
@@ -18,7 +25,7 @@ class GunganCity extends React.Component {
     return (
       <div id='gunganCity' className="col-6 text-center">
         <h2 className='cityTitle'>Gungan City</h2>
-        <button className="btn btn-danger killBtn">USE THE FORCE</button>
+        <button className="btn btn-danger killBtn" onClick={this.useForce}>USE THE FORCE</button>
         <div className='livingStudents row d-flex flex-wrap justify-content-between'>
         {studentCards}
         </div>
