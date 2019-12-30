@@ -1,4 +1,17 @@
 .studentImg{
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+}
+
+.liveStudentCard{
+  // width: 150px;
+  // height: 150px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.card-title{
+  color: #fff;
+  align-items: flex-start;
 }

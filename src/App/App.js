@@ -12,7 +12,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const students = studentData.livingStudents();
-    console.log(students);
+    console.log(studentData.livingStudents());
     this.setState({ students });
   }
 
@@ -20,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
     <div className="App">
-      <h1>Join The Dark Side or Die!</h1>
+      <h1 className="appTitle">Join The Dark Side or Die!</h1>
       <div>
         <GunganCity students={this.state.students} />
       </div>

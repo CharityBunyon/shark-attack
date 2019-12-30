@@ -16,10 +16,10 @@ class GunganCity extends React.Component {
     const studentCards = students.map((student) => <Student key={student.id} student={student}/>);
 
     return (
-      <div id='gunganCity' className='container'>
+      <div id='gunganCity' className="col-6 text-center">
         <h2 className='cityTitle'>Gungan City</h2>
         <button className="btn btn-danger killBtn">USE THE FORCE</button>
-        <div className='livingStudents row'>
+        <div className='livingStudents row d-flex flex-wrap justify-content-between'>
         {studentCards}
         </div>
       </div>
