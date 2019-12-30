@@ -2,7 +2,9 @@ import React from 'react';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import studentData from '../helpers/data/studentData';
+import GunganCity from '../components/GunganCity/GunganCity';
 
+console.log(studentData);
 class App extends React.Component {
   state = {
     students: [],
@@ -10,13 +12,18 @@ class App extends React.Component {
 
   componentDidMount() {
     const students = studentData.livingStudents();
+    console.log(students);
     this.setState({ students });
   }
+
 
   render() {
     return (
     <div className="App">
-      <button className="btn btn-danger">DANGER</button>
+      <h1>Join The Dark Side or Die!</h1>
+      <div>
+        <GunganCity students={this.state.students} />
+      </div>
     </div>
     );
   }
