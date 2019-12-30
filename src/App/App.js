@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
     <div className="App">
-      <h1 className="appTitle">Join The Dark Side or Die!</h1>
+      <h1 className="appTitle">Join Me or Die!</h1>
       <div>
         <GunganCity students={this.state.students} />
       </div>
