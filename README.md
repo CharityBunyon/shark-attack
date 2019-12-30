@@ -1,5 +1,24 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+# Shark Attack aka Charity's Revenge
+
+## Description
+
+In a land far far away are the NSS cohort E-10 comrades forging together to destroy me. But they are no match for me because I have chosen you to be my apprentice. Your first task is to exterminate all E-10 students so that I may reign supreme! By clicking the USE THE FORCE button you will rid me of my enemies and may become a part of my legacy! 
+
+## ScreenShots
+![main view]()
+
+
+## How to run
+* Clone down this project from [GitHub](https://github.com/CharityBunyon/shark-attack)
+* Install [http-server](https://npmjs.com/package/http-server) from npm
+* At the root of this project, run the following command: `hs -p 8080`
+* In your browser, navigate to `https://localhost:8080`
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
