@@ -11,10 +11,11 @@ class Student extends React.Component {
     const { student } = this.props;
     console.log(student);
     return (
-      <div className="card liveStudentCard">
+      <div className="card liveStudentCard col-3 text-center">
         <img src={student.imgUrl} className="card-img-top studentImg" alt={student.firstName}/>
         <div className='card-body'>
-          <h5 className='card-title'>{student.firstName} {student.lastName}</h5>
+          <p className='card-title'>{student.firstName}</p>
+          <p className='card-title'>{student.lastName}</p>
         </div>
       </div>
     );
