@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In a land far far away are the NSS cohort E-10 comrades forging together to destroy me. But they are no match for me because I have chosen you to be my apprentice. Your first task is to exterminate all E-10 students so that I may reign supreme! By clicking the USE THE FORCE button you will rid me of my enemies and may become a part of my legacy! 
 
 ## ScreenShots
-![main view]()
+![main view](https://raw.githubusercontent.com/CharityBunyon/shark-attack/master/src/images/Charity's%20Revenge.png)
 
 
 ## How to run
