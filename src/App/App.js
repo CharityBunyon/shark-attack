@@ -8,12 +8,13 @@ console.log(studentData);
 class App extends React.Component {
   state = {
     students: [],
+    deadStudents: [],
   }
 
   componentDidMount() {
     const students = studentData.livingStudents();
-    console.log(studentData.livingStudents());
-    this.setState({ students });
+    const deadStudents = studentData.dearlyBeloved();
+    this.setState({ students, deadStudents });
   }
 
 
