@@ -23,10 +23,12 @@ class GunganCity extends React.Component {
     const studentCards = students.map((student) => <Student key={student.id} student={student}/>);
 
     return (
-      <div id='gunganCity' className="col-6 text-center">
-        <h2 className='cityTitle'>Gungan City</h2>
-        <button className="btn btn-danger killBtn" onClick={this.useForce}>USE THE FORCE</button>
-        <div className='livingStudents row d-flex flex-wrap justify-content-between'>
+      <div id='gunganCity' className="col-6">
+        <div className="text-center">
+          <h2 className='cityTitle'>Gungan City</h2>
+          <button className="btn btn-danger killBtn" onClick={this.useForce}>USE THE FORCE</button>
+        </div>
+        <div className='livingStudents d-flex flex-wrap'>
         {studentCards}
         </div>
       </div>
